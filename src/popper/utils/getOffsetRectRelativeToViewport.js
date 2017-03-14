@@ -9,8 +9,8 @@ export default function getOffsetRectRelativeToViewport(element) {
         const offsetParent = getOffsetParent(element);
         const parentOffset = getOffsetRectRelativeToViewport(offsetParent);
         const offset = {
-            width: relativeOffset.offsetWidth,
-            height: relativeOffset.offsetHeight,
+            width: relativeOffset.width,
+            height: relativeOffset.height,
             left: relativeOffset.left + parentOffset.left,
             top: relativeOffset.top + parentOffset.top,
             right: relativeOffset.right - parentOffset.right,
